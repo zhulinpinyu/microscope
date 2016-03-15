@@ -13,7 +13,7 @@ var postsData = [
   }
 ];
 
-if(Posts.find().count()===0){
+if(Posts.find().count() < 0){
   postsData.forEach((p) => {
     Posts.insert(p);
   });
